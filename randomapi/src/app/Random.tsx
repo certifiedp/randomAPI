@@ -21,21 +21,8 @@ interface User {
     age: number;
   };
   picture: {
+    small: string;
     large: string;
-  };
-
-  location: {
-    street: {
-      number: number;
-      name: string;
-    };
-    city: string;
-    state: string;
-    country: string;
-  };
-  registered: {
-    date: string;
-    age: number;
   };
 }
 
