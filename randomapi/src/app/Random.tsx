@@ -79,4 +79,3 @@ export default function Random() {
   );
 }
 
-export default Random;
