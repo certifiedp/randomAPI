@@ -6,7 +6,33 @@ import {
   CardFooter,
   CardTitle,
 } from "@/components/ui/card";
-import type { Config } from "tailwindcss";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
+// export function CarouselDemo() {
+//   return (
+//     <Carousel className="w-full max-w-xs">
+//       <CarouselContent>
+//         {Array.from({ length: 5 }).map((_, index) => (
+//           <CarouselItem key={index}>
+//             <div className="p-1">
+            
+//             </div>
+//           </CarouselItem>
+//         ))}
+//       </CarouselContent>
+//       <CarouselPrevious />
+//       <CarouselNext />
+//     </Carousel>
+//   )
+// }
+
 
 
 export default async function Home() {
@@ -23,17 +49,17 @@ export default async function Home() {
     <>
     {resultArr.map((user, index) => (
       <Card key = {index}>
-        <CardTitle className="p-2, m-2">
+        <CardTitle className="m-2 p-2">
         Name: {user.results[index].name.first}{" "}
           {user.results[index].name.last}
         </CardTitle>
-        <CardDescription className="p-2, m-2">
+        <CardDescription className="m-2 p-2">
           Information on some random.
         </CardDescription>
-        <CardContent className="p-2, m-2">
+        <CardContent className="m2 p-2">
         <img src={user.results[index].picture.large} alt="user" />
         </CardContent>
-        <CardFooter className="p-2, m-2">
+        <CardFooter className="m-2 p-2">
           Email: {user.results[index].email}{", "}
           Number: {user.results[index].phone}
         </CardFooter>

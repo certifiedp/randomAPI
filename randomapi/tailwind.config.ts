@@ -18,8 +18,8 @@ const config = {
       },
     },
     colors: {
-      transparent: 'transparent', 
-      grey: '#18181b',
+      transparent: "transparent",
+      grey: "#18181b",
     },
     extend: {
       colors: {
