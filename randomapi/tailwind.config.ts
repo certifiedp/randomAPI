@@ -17,6 +17,10 @@ const config = {
         "2xl": "1400px",
       },
     },
+    colors: {
+      transparent: 'transparent', 
+      grey: '#18181b',
+    },
     extend: {
       colors: {
         border: "hsl(var(--border))",
