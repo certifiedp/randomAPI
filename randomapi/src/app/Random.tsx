@@ -51,7 +51,9 @@ export default function Random() {
       </CardHeader>
       <CardDescription>
         <p>Random user</p>
-        <Button onClick={() => getRandom().then(data => setUser(data))}>Get Random User</Button>
+        <Button onClick={() => getRandom().then((data) => setUser(data))}>
+          Get Random User
+        </Button>
       </CardDescription>
       {user && (
         <div>
@@ -60,9 +62,10 @@ export default function Random() {
             {(user as User).name.first} {(user as User).name.last}
           </p>
           <p>{(user as User).email}</p>
+          <p> {(user as User).phone}</p>
+          <p> {(user as User).gender}</p>
         </div>
       )}
     </Card>
   );
 }
-
